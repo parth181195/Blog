@@ -1,0 +1,138 @@
+.row
+  .featured
+    text-align: center
+    margin-bottom: 150px
+    .tags
+      font-family: "Megrim", cursive
+      position: absolute
+      transform: rotate(-90deg)
+      transform-origin: bottom left
+      bottom: 0px
+      left: 0px
+      font-size: 1em
+      font-weight: 600
+      overflow: hidden
+    .img
+      overflow: hidden
+      width: 100%
+      margin: 0
+      position: relative
+      background: rgb(0, 110, 255)
+      .imgwrap
+        overflow: hidden
+        height: 100vw
+        margin: 0
+        width: 100%
+        a
+          img
+            position: absolute
+            left: 0
+            width: 100vw
+    .text-container
+      height: 100%
+      margin: 0
+      width: 100%
+      height: auto
+      position: relative
+      .cat
+        display: none
+      &::after
+        content: "Inspiration"
+        display: block
+        position: absolute
+        margin: 0
+        top: 0
+        left: 10px
+        color: #000
+        font-family: "Megrim", cursive
+        border-bottom: 1px solid #000
+        font-size: 1.9em
+        font-weight: 600
+      .title
+        margin: 0
+        a
+          display: none
+      p.disc
+        height: 130px
+        overflow: hidden
+        width: 50%
+        text-align: justify
+        position: absolute
+        top: 0
+        right: 20px
+        font-family: Oswald
+        font-weight: 300
+        opacity: 0.75
+        margin: 0 auto
+@media(max-width:350px)
+  .row
+    .featured
+      margin-bottom: 150px
+      .img
+        .imgwrap
+          a
+            img
+              width: 100vw
+      .text-container
+        &::after
+          left: 50%
+          transform: translateX(-50%)
+        p.disc
+          width: 90%
+          margin: auto
+          height: 88px
+          top: 45px
+          transform: translateY(10px)
+@media(min-width:500px)
+  .row
+    .featured
+      .img
+        .imgwrap
+          height: 300px
+          a
+            img
+              width: 89.9vw
+              transform: translateY(-25vw)
+      .text-container
+        p.disc
+          width: 60%
+        &::after
+          left: 10px
+@media(min-width:730px)
+  .row
+    width: 80%
+    margin: auto
+    .featured
+      .img
+        .imgwrap
+          a
+            img
+              width: 78.7vw
+              transform: translateY(-27vw)
+      .text-container
+        p.disc
+          width: 50%
+          font-size: 1.2em
+@media(min-width:1000px)
+  .row
+    .featured
+      .img
+        .imgwrap
+          height: 450px
+          a
+            img
+              width: 78.7vw
+              transform: translateY(-27.75vw)
+      .text-containers
+        p.disc
+          width: 50%
+@media(min-width:1400px)
+    .row
+      .featured
+        .img
+          .imgwrap
+            height: 500px
+            a
+              img
+                width: 79.7vw
+                transform: translateY(-39.9vw)

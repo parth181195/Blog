@@ -1,0 +1,38 @@
+#header
+  background-color: #fff
+  margin-bottom: 10px
+  h1.logo
+    font-family: 'Pacifico', cursive
+    font-size: 2em
+    color: #000000
+    text-align: center
+    margin: 7px
+    line-height: 32px
+  .nav
+    ul
+      font-family: "Megrim", cursive
+      list-style: none
+      margin: 0
+      padding: 0
+      text-align: center
+      li
+        display: inline-block
+        padding: 5px 10px
+        a
+          color: #055
+          font-size: 1.3em
+          position: relative
+
+          &::after
+            content: ""
+            position: absolute
+            background-color: #000
+            left: 50%
+            bottom: 0px
+            width: 0px
+            height: 2px
+            transition: all 0.15s cubic-bezier(0.000, 0.480, 0.250, 1.005)
+          &:hover
+            &::after
+              width: 100%
+              left: 0

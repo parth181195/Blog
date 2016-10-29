@@ -1,0 +1,34 @@
+{
+  "name": "Blog--Portfolio",
+  "version": "0.0.0",
+  "description": "My Personal website",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Parth Jansari",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^1.3.7",
+    "gulp": "^3.8.8",
+    "gulp-autoprefixer": "1.0.0",
+    "gulp-git": "^1.11.3",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^2.1.0",
+    "run-sequence": "^1.2.2",
+    "yargs": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/parth181195/Blog--Portfolio"
+  },
+  "keywords": [
+    "jekyll",
+    "gulp",
+    "sass",
+    "browsersync"
+  ],
+  "dependencies": {
+    "gulp-git": "^1.11.3"
+  }
+}

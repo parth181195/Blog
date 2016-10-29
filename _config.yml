@@ -1,0 +1,6 @@
+name: ParthJansari
+markdown: redcarpet
+highlighter: rouge # or rouge or null
+exclude: ["node_modules", "gulpfile.js", "package.json"]
+gems: [jekyll-paginate]
+paginate: 8

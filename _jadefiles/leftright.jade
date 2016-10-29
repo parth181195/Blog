@@ -1,0 +1,34 @@
+.row
+  {% assign article = site.posts | where: 'Inspiration', 'false' %}
+  {% for posts in article limit:1 offset:2 %}
+  .right
+    .img
+      .imgwrap
+        a(href='{{posts.url}}')
+          img(src="{{posts.thumbnail}}")
+    .text-container
+      h3.title
+        a(href='#') {{posts.title}}
+      p.disc {{posts.disc}}
+      {% for tags in posts.tags %}
+      .cat
+        a(href='#') {{tags}},
+      {% endfor %}
+  {% endfor %}
+.row
+  {% assign article = site.posts | where: 'Inspiration', 'false' %}
+  {% for posts in article limit:1 offset:3 %}
+  .left
+    .img
+      .imgwrap
+        a(href='{{posts.url}}')
+          img(src="{{posts.thumbnail}}")
+    .text-container
+      h3.title
+        a(href='#') {{posts.title}}
+      p.disc {{posts.disc}}
+      {% for tags in posts.tags %}
+      .cat
+        a(href='#') {{tags}},
+      {% endfor %}
+  {% endfor %}

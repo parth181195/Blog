@@ -1,0 +1,63 @@
+#footer
+  margin-top: 40px
+  position: relative
+  &::after
+    position: absolute
+    content: ""
+    width: 75vw
+    left: 12.5vw
+    top: -5px
+    height: 1px
+    background-color: #000
+  width: 100%
+  background-color: #ffffff
+  height: 30px
+  p.copy
+    position: absolute
+    width: 75vw
+    text-align: center
+    left: 50%
+    transform: translateX(-50%)
+    font-family: "Megrim", cursive
+    font-weight: bold
+    font-size: 1.2em
+    display: inline-block
+  p.social
+    display: inline-block
+    position: absolute
+    margin-right: -86.703px
+    top: 75px
+    right: 50vw
+    .fa
+      font-size: 2em
+      margin: 0 10px 0 10px
+      opacity: 0.5
+      padding: 5px
+      color: #000
+    .fa-behance
+      &:hover
+        color: #1769FF
+        opacity: 1
+    .fa-instagram
+      &:hover
+        color: #000
+        opacity: 1
+    .fa-github-alt
+      &:hover
+        color: #7e00fb
+        opacity: 1
+@media(min-width:350px)
+  #footer
+    p.social
+      top: 45px
+@media(min-width:730px)
+  #footer
+    p.copy
+      text-align: left
+    p.social
+      margin-right: 0
+      top: 0
+      right: 12.5vw
+      .fa
+        font-size: 1.5em
+        margin: 0 5px 0 5px

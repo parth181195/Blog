@@ -1,0 +1,16 @@
+{% assign article = site.posts | where: 'Inspiration', 'false' %}
+{% for posts in article limit:3 offset:4 %}
+.three
+  .img
+    .imgwrap
+      a(href='{{posts.url}}')
+        img(src="{{posts.thumbnail}}")
+  .text-container
+    h3.title
+      a(href='#') {{posts.title}}
+    p.disc {{posts.disc}}
+    {% for tags in posts.tags %}
+    .cat
+      a(href='#') {{tags}},
+    {% endfor %}
+{% endfor %}

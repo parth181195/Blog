@@ -1,0 +1,94 @@
+.row
+  .left,.right
+    vertical-align: top
+    margin-bottom: 50px
+    .img
+      width: 100%
+      overflow: hidden
+      height: 300px
+      margin: 0
+      .imgwrap
+        width: 100%
+        .tags
+          display: none
+        img
+          width: 100vw
+    .text-container
+      width: 80%
+      margin: auto
+      text-align: center
+      .title
+        margin: 0
+        a
+          opacity: 1
+          font-family: "Oswald", cursive
+          font-weight: 300
+          color: #000
+      .cat
+        font-family: "Megrim", cursive
+        opacity: 1
+        font-weight: bold
+        display: inline-block
+      p.disc
+        font-family: "Oswald", cursive
+        opacity: 0.75
+        font-weight: 300
+        margin: 0
+@media(min-width:500px)
+  .row
+    .left,.right
+      .img
+        background: rgb(67, 98, 164)
+        .imgwrap
+          img
+            width: 90vw
+@media(min-width:730px)
+  .row
+    .left
+      height: 40vw
+      margin: 50px 0
+      .img
+        float: left
+        height: 40vw
+        width: 40vw
+        .imgwrap
+          a
+            img
+              width: 40vw
+      .text-container
+        margin-top: 10px
+        text-align: left
+        width: 45%
+        float: right
+    .right
+      height: 40vw
+      margin: 50px 0
+      .img
+        float: right
+        height: 40vw
+        width: 40vw
+        .imgwrap
+          a
+            img
+              width: 40vw
+      .text-container
+        vertical-align: middle
+        text-align: left
+        width: 45%
+        float: left
+@media(min-width:1000px)
+  .row
+    .left,.right
+      height: 25vw
+      .img
+        width: 37vw
+        height: 25vw
+        .imgwrap
+          a
+            img
+              width: 37vw
+      .text-container
+        margin-top: 50px
+        width: 50%
+        p.disc
+          font-size: 1.2em

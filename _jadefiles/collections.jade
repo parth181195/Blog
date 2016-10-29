@@ -1,0 +1,79 @@
+.hide
+  {%for posts in site.posts%}
+  {%for tags in posts.tags%}
+  a.class(href="#" class="temp") {{tags}}
+  {% endfor %}
+  {% endfor %}
+.collections
+  .ux.grp
+    h1 UX
+    {%for posts in site.posts%} 
+    {% if posts.tags contains "ux" %}
+    .col
+      .img
+        a(href='{{posts.url}}')
+          img(src='{{posts.thumbnail}}')
+      h3.title
+        a(href='{{posts.url}}') {{posts.title}}  
+    {% endif %}
+    {% endfor %}
+  .photography.grp
+    h1 Photography
+    {%for posts in site.posts%} 
+    {% if posts.tags contains "photography" %}
+    .col
+      .img
+        a(href='{{posts.url}}')
+          img(src='{{posts.thumbnail}}')
+      h3.title
+        a(href='{{posts.url}}') {{posts.title}}  
+    {% endif %}
+    {% endfor %}
+    .ux.grp
+      h1 UX
+      {%for posts in site.posts%} 
+      {% if posts.tags contains "ux" %}
+      .col
+        .img
+          a(href='{{posts.url}}')
+            img(src='{{posts.thumbnail}}')
+        h3.title
+          a(href='{{posts.url}}') {{posts.title}}  
+      {% endif %}
+      {% endfor %}
+  .Inspiration.grp
+    h1 Inspiration
+    {%for posts in site.posts%} 
+    {% if posts.tags contains "Inspiration" %}
+    .col
+      .img
+        a(href='{{posts.url}}')
+          img(src='{{posts.thumbnail}}')
+      h3.title
+        a(href='{{posts.url}}') {{posts.title}}  
+    {% endif %}
+    {% endfor %}
+  .web.grp
+    h1 Web
+    {%for posts in site.posts%} 
+    {% if posts.tags contains "web" %}
+    .col
+      .img
+        a(href='{{posts.url}}')
+          img(src='{{posts.thumbnail}}')
+      h3.title
+        a(href='{{posts.url}}') {{posts.title}}  
+    {% endif %}
+    {% endfor %}
+  .jekyll.grp
+    h1 Jekyll
+    {%for posts in site.posts%} 
+    {% if posts.tags contains "jekyll" %}
+    .col
+      .img
+        a(href='{{posts.url}}')
+          img(src='{{posts.thumbnail}}')
+      h3.title
+        a(href='{{posts.url}}') {{posts.title}}  
+    {% endif %}
+    {% endfor %}

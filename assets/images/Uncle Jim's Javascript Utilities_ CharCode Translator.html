@@ -1,0 +1,101 @@
+
+<!-- saved from url=(0033)http://jdstiles.com/java/cct.html -->
+<html class="gr__jdstiles_com"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Uncle Jim's Javascript Utilities: CharCode Translator</title>
+<script type="text/javascript" src="./Uncle Jim&#39;s Javascript Utilities_ CharCode Translator_files/mailpage.js.download"></script>
+<meta name="DESCRIPTION" content="javascript examples with source code">
+<meta name="KEYWORDS" content="java, script, javascript, examples, source, code, forms, games">
+<meta name="AUTHOR" content="Uncle Jim&#39;s Web Site Designs">
+<meta http-equiv="imagetoolbar" content="no">
+<script type="text/javascript"><!--
+function stopErrors() {
+ return true;
+}
+window.onerror = stopErrors;
+//--></script>
+<link rel="stylesheet" type="text/css" href="./Uncle Jim&#39;s Javascript Utilities_ CharCode Translator_files/hs.css">
+<script type="text/javascript"><!--
+function selectAll(theField) {
+var tempval=eval("document."+theField)
+tempval.focus()
+tempval.select()
+}
+//--></script>
+<script type="text/javascript"><!--
+defaultStatus = "Uncle Jims Website Designs                     http://jdstiles.com"  
+//--></script>
+<script type="text/javascript"><!-- 
+/*
+ ______________________________________________________
+/¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\
+|          Another JavaScript from Uncle Jim           |
+|                                                      |
+|   Feel free to copy, use and change this script as   |
+|        long as this part remains unchanged.          |
+|                                                      |
+|      Visit my website at http://www.jdstiles.com     |
+|           for more scripts like this one             |
+|                                                      |
+|                     Created: 1996                    |
+|              Last Updated: December, 2005            |
+\______________________________________________________/
+ ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+*/
+
+function runFromCharCode()
+{
+	input = document.fromCharCode.input.value;
+	//alert(input);
+	output = eval("String.fromCharCode(" + input + ")");
+	//alert(output);
+	document.fromCharCode.output.value = output;
+}
+function runCharCodeAt()
+{
+	input = document.charCodeAt.input.value;
+	//alert(input);
+	output = "";
+	for(i=0; i<input.length; ++i)
+	{
+		if(output != "") output += ", ";
+		output += input.charCodeAt(i);
+	}
+	//alert(output);
+	document.charCodeAt.output.value = output;
+}
+
+//--></script>
+</head>
+<body data-gr-c-s-loaded="true" cz-shortcut-listen="true">
+<center><h2>Uncle Jim's Web Designs</h2><h4>Javascript Utilities</h4><h3>CharCode Translator</h3>Author: <a href="http://jdstiles.com/">Jim Stiles</a></center>
+<blockquote><blockquote><p align="justify">This is a page that demonstrates the JavaScript charCodeAt() and fromCharCode() functions that I use. Type character numbers separated by commas in the first box, hit the first button and see the character equivalents in the second. Paste, or type, characters into the third, hit the second button, and see the character number codes in the last.</p></blockquote></blockquote>
+<center><form name="fromCharCode">
+<textarea rows="4" cols="30" name="input">85, 110, 99, 108, 101, 32, 74, 105, 109</textarea>
+<input type="Button" value="fromCharCode()" onclick="runFromCharCode()">
+<textarea rows="4" cols="30" name="output"></textarea></form>
+<hr>
+<form name="charCodeAt"><textarea rows="4" cols="30" name="input">Web Designs</textarea>
+<input type="Button" value="  charCodeAt()  " onclick="runCharCodeAt()">
+<textarea rows="4" cols="30" name="output"></textarea></form>
+<hr>
+<form name="string">
+<textarea rows="2" cols="85" name="input">&lt;script language=javascript&gt;eval(String.fromCharCode(PLACE CharCode HERE ))&lt;/script&gt;</textarea>
+</form></center>
+<center><a href="javascript:mailpage()">Send this page to someone</a></center><br><br>
+<center><script src="./Uncle Jim&#39;s Javascript Utilities_ CharCode Translator_files/xmenu.js.download" type="text/javascript"></script><form action="http://jdstiles.com/java/chgoto" method="get" target="_top">
+<select name="url" onchange="menu_goto(this.form)">
+<option value="#">Where do you want to go</option>
+<option value="index.html">Home Page</option>
+<option value="jdstut.html">Tutorials</option>
+<option value="javamain.html">JavaScript Examples</option>
+<option value="jds.main_office.html">Microsoft Office Tips</option>
+<option value="java/101.html">Developer Tools</option>
+<option value="games/games.html">Online Games</option>
+<option value="sitetree.html">Site Index</option>
+<option value="java/feedback.html">Feedback</option>
+</select>
+</form>
+<a href="mailto:info@jdstiles.com?subject=Feedback%20from%20Website" title="Send Comments">Website Administrator</a><br>
+<a href="javascript:window.close();"><b><i>Close This Window</i></b></a></center><br><br>
+
+</body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>

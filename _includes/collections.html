@@ -1,0 +1,15 @@
+<div class="hide">{%for posts in site.posts%}
+{%for tags in posts.tags%}<a href="#" class="class temp">{{tags}}</a>{% endfor %}
+{% endfor %}</div><div class="collections"><div class="ux grp"><h1>UX</h1>{%for posts in site.posts%} 
+{% if posts.tags contains "ux" %}<div class="col"><div class="img"><a href="{{posts.url}}"><img src="{{posts.thumbnail}}"/></a></div><h3 class="title"><a href="{{posts.url}}">{{posts.title}}  </a></h3></div>{% endif %}
+{% endfor %}</div><div class="photography grp"><h1>Photography</h1>{%for posts in site.posts%} 
+{% if posts.tags contains "photography" %}<div class="col"><div class="img"><a href="{{posts.url}}"><img src="{{posts.thumbnail}}"/></a></div><h3 class="title"><a href="{{posts.url}}">{{posts.title}}  </a></h3></div>{% endif %}
+{% endfor %}<div class="ux grp"><h1>UX</h1>{%for posts in site.posts%} 
+{% if posts.tags contains "ux" %}<div class="col"><div class="img"><a href="{{posts.url}}"><img src="{{posts.thumbnail}}"/></a></div><h3 class="title"><a href="{{posts.url}}">{{posts.title}}  </a></h3></div>{% endif %}
+{% endfor %}</div></div><div class="Inspiration grp"><h1>Inspiration</h1>{%for posts in site.posts%} 
+{% if posts.tags contains "Inspiration" %}<div class="col"><div class="img"><a href="{{posts.url}}"><img src="{{posts.thumbnail}}"/></a></div><h3 class="title"><a href="{{posts.url}}">{{posts.title}}  </a></h3></div>{% endif %}
+{% endfor %}</div><div class="web grp"><h1>Web</h1>{%for posts in site.posts%} 
+{% if posts.tags contains "web" %}<div class="col"><div class="img"><a href="{{posts.url}}"><img src="{{posts.thumbnail}}"/></a></div><h3 class="title"><a href="{{posts.url}}">{{posts.title}}  </a></h3></div>{% endif %}
+{% endfor %}</div><div class="jekyll grp"><h1>Jekyll</h1>{%for posts in site.posts%} 
+{% if posts.tags contains "jekyll" %}<div class="col"><div class="img"><a href="{{posts.url}}"><img src="{{posts.thumbnail}}"/></a></div><h3 class="title"><a href="{{posts.url}}">{{posts.title}}  </a></h3></div>{% endif %}
+{% endfor %}</div></div>

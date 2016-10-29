@@ -1,0 +1,2 @@
+{% assign Inspiration = site.posts | where: 'Inspiration', 'true' %}
+{% for posts in Inspiration limit:1 %}<div class="featured"><div class="img"><div class="imgwrap"><a href="{{posts.url}}"><img src="{{posts.thumbnail}}"/></a></div></div><div class="text-container"><h3 class="title"> <a href="#">{{posts.title}}</a></h3><p class="disc">{{posts.disc}}</p>{% for tags in posts.tags %}<div class="cat"><a href="#">{{tags}},</a></div>{% endfor %}</div></div>{% endfor %}
