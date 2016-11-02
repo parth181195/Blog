@@ -992,103 +992,12 @@ body {
         .grp .col .img a img {
           width: 18.8vw; } }
 
-svg {
-  margin: 20px;
-  opacity: 0;
-  vertical-align: top; }
-
-svg#five .st0 {
-  fill: rgba(252, 73, 11, 0);
-  stroke: #FC490B;
-  stroke-width: 25;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-miterlimit: 10; }
-
-svg#five .st1 {
-  fill: none;
-  stroke: #fff;
-  stroke-width: 25;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-miterlimit: 10; }
-
-svg#five .st2 {
-  fill: none;
-  stroke: #FC490B;
-  stroke-width: 8;
-  stroke-linejoin: round;
-  stroke-miterlimit: 10; }
-
-svg#five .st3 {
-  fill: none;
-  stroke: #000000;
-  stroke-width: 19;
-  stroke-miterlimit: 2; }
-
-svg#three .st0 {
-  fill: none;
-  stroke: #0C61C6;
-  stroke-width: 25;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-miterlimit: 10; }
-
-svg#three .st1 {
-  fill: none;
-  stroke: #FFFFFF;
-  stroke-width: 25;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-miterlimit: 10; }
-
-svg#three .st2 {
-  fill: none;
-  stroke: #0C61C6;
-  stroke-width: 8;
-  stroke-linejoin: round;
-  stroke-miterlimit: 10; }
-
-svg#three .st3 {
-  fill: none;
-  stroke: #000000;
-  stroke-width: 19;
-  stroke-miterlimit: 2; }
-
-svg#js .st0 {
-  fill: none;
-  stroke: #63A814;
-  stroke-width: 25;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-miterlimit: 10; }
-
-svg#js .st1 {
-  fill: none;
-  stroke: #FFFFFF;
-  stroke-width: 25;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-miterlimit: 10; }
-
-svg#js .st2 {
-  fill: none;
-  stroke: #63A814;
-  stroke-width: 8;
-  stroke-linejoin: round;
-  stroke-miterlimit: 10; }
-
-svg#js .st3 {
-  fill: none;
-  stroke: #000000;
-  stroke-width: 19;
-  stroke-miterlimit: 2; }
-
-svg#sass .st0 {
-  fill: none;
-  stroke: #CF649A;
-  stroke-width: 3;
-  stroke-miterlimit: 2; }
+.row .center {
+  text-align: center; }
+  .row .center img.super {
+    width: 80%; }
+  .row .center img.me {
+    width: 100%; }
 
 body {
   background: white; }
